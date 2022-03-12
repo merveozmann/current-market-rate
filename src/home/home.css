@@ -1,0 +1,220 @@
+.home__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.gold__items{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.8rem;
+}
+.gold__item{
+    background: rgba(0, 255, 255, 0.315);
+    padding: 1.2rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.gold__item-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gold__item-icon{
+    margin-left: 3rem;
+    animation: upDownIcon 2s infinite;
+    font-size: 2rem !important;
+}
+@keyframes upDownIcon {
+      from{opacity: 0;}
+      to{opacity: 1;}  
+}
+.gold__item >p{
+    margin-top: 1rem;
+    color: rgb(15 15 15 / 81%);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.current__rate{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin: 2rem 1rem auto 1rem;
+}
+.current__rate-card{
+    background: rgba(15, 15, 15, 0.808);
+    gap: 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: -1px 7px 36px 9px rgba(0,0,0,0.71);
+    -moz-box-shadow: -1px 7px 36px 9px rgba(0,0,0,0.71);
+    box-shadow: -1px 7px 36px 9px rgba(0,0,0,0.71);
+}
+.current__rate-card:hover{
+    box-shadow: none;
+
+}
+.current__rate-table {
+    width: 100%;
+    text-align: center;
+    
+}
+.current__rate-table tbody td,thead th{
+    height: 2.8rem;
+    border-bottom: 1px solid white;
+}
+.current__rate-table tbody tr:last-child td{
+    border: none;
+}
+.current__rate-button{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 6rem -3rem 2rem;
+}
+.current__rate-button button{
+    padding: 0.5rem;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid rgb(60 243 243 / 93%) ;
+    border-radius: 6px;
+}
+.current__rate-button button:hover{
+    background:rgb(60 243 243 / 93%) ;
+    border: none;
+    color: black;
+    
+}
+.crpyto__card{
+    margin: 1rem;
+}
+.crypto__items{
+    background: rgba(15, 15, 15, 0.808);;
+    border-radius: 1rem;
+    display: flex;
+    gap: 8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -1px 7px 36px 9px rgba(0,0,0,0.71);
+    -moz-box-shadow: -1px 7px 36px 9px rgba(0,0,0,0.71);
+    box-shadow: -1px 7px 36px 9px rgba(0,0,0,0.71);
+}
+.crypto__items:hover{
+    box-shadow: none;
+}
+.crypto__icon{
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+.crypto__graphic{
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+.crypto__icon-size{
+    font-size: 1.5rem !important;
+}
+.crypto__item-1 p, .crypto__item-2 p,.crypto__item-3 p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.crypto__item-1 span {
+    font-size: 0.7rem;
+    color: rgba(211, 211, 211, 0.61);
+}
+.crypto__item-2 span {
+    font-size: 1rem;
+    color: rgb(241 109 225 / 93%);
+}
+.crypto__item-3 span {
+    font-size: 1rem;
+    color: rgba(87, 192, 84, 0.93);
+}
+.crypto__btn button{
+    background: rgb(63, 62, 62);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+.line {
+    position: absolute;
+    width: 150px;
+    /* Height set to clip correctly basically background-size/2 + line width */
+    height: 25px;
+    margin-top: 10px;
+}
+.line1 {
+    background: linear-gradient(45deg, transparent, transparent 49%, rgb(111, 0, 255) 49%, transparent 51%);
+}
+.line2 {
+    background: linear-gradient(-45deg, transparent, transparent 49%, rgb(111, 0, 255) 49%, transparent 51%);
+}
+.line {
+    /* Must be after background definition. */
+    background-size: 50px 50px;
+}
+
+@media screen and (max-width:1024px) {
+    .home__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+    .gold__items{
+        grid-template-columns: 1fr;
+        width: 100%;
+
+    }
+    .current__rate{
+        grid-template-columns: 1fr;
+    }
+    .current__rate-card{
+        gap: 0rem;
+        width: 100%;
+    }
+    .current__rate-table{
+        width: 100%;
+    }
+    .crypto__items{
+        gap: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    .crypto__btn button{
+        margin: 2rem 6rem -3rem 2rem;
+    }
+    .crpyto__card{
+        margin-top: 2rem;
+    }
+    
+}
+@media screen and (max-width:600px) {
+
+    .crypto__graphic{
+        display: none;
+    }
+    .crypto__btn{
+        display: none;
+    }
+    .crypto__icon{
+        display: none;
+    }
+    .crpyto__card{
+        margin: 2rem auto auto -2rem;
+    }
+    .crypto__items{
+        gap: 1rem;
+    }
+    .current__rate-button{
+        margin: 1rem 2rem -3rem 2rem;
+    }
+    
+}

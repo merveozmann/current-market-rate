@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: none;
+}
+html{
+  font-size: 14px;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins,sans-serif;
+  font-size: 0.88rem;
+  background: rgba(15, 15, 15, 0.808);
+  user-select: none;
+  overflow-x: hidden;
+  color: white;
+}
+h5{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.red{
+  background: rgb(195,74,54) !important;
+background: linear-gradient(139deg, rgba(195,74,54,1) 18%, rgba(189,169,164,1) 100%) !important;
+  /* background: rgb(98 255 0 / 72%) !important; */
+}
+.light__blue{
+  background: rgb(117,199,237) !important;
+  background: linear-gradient(139deg, rgba(117,199,237,1) 18%, rgba(30,89,81,1) 100%) !important;
+}
+.purple{
+  background: rgb(155,137,179) !important;
+  background: linear-gradient(139deg, rgba(155,137,179,1) 18%, rgba(254,254,223,1) 100%) !important;
+}
+.yellow{
+  background: rgb(34,193,195) !important;
+  background: linear-gradient(159deg, rgba(34,193,195,1) 0%, rgba(234,253,45,1) 94%) !important;
+ 
+}
+.pink{
+  background: rgb(255,111,145) !important;
+  background: linear-gradient(139deg, rgba(255,111,145,1) 18%, rgba(255,199,95,1) 98%) !important;
+ 
+}
+
